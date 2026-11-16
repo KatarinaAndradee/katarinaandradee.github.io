@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Updated: centered baking row, compact Movement videos, vertical swimming video, exact bio text, clean Resume filename. -->
+<!-- Updated: Singing now lives inside Offstage, singing videos reordered, Dale Duro video removed, new homepage portrait, acting reel on homepage. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,10 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Yeseva+One&display=swap" rel="stylesheet">
   <style>
     :root {
-      --purple: #4E2A84;
-      --yellow: #FFE875;
-      --orange: #FF8200;
-      --ink: #0E0B16;
+      --burgundy: #6D213C;
+      --wine: #83142C;
+      --yellow: #F9D276;
+      --orange: #AD1D45;
+      --ink: #44000D;
       --white: #ffffff;
     }
 
@@ -34,8 +35,8 @@
       z-index: 20;
       top: 0;
       color: white;
-      background: var(--purple);
-      box-shadow: 0 8px 28px rgba(14,11,22,.16);
+      background: var(--burgundy);
+      box-shadow: 0 8px 28px rgba(68,0,13,.16);
     }
     section[data-page] { display: none; }
     section[data-page].active-page { display: block; animation: page-in .32s ease both; }
@@ -48,8 +49,8 @@
       min-height: auto;
       color: white;
       background:
-        radial-gradient(circle at 84% 18%, rgba(255,130,0,.16), transparent 24rem),
-        var(--purple);
+        radial-gradient(circle at 84% 18%, rgba(249,210,118,.12), transparent 24rem),
+        var(--burgundy);
       overflow: hidden;
     }
     .nav {
@@ -67,12 +68,12 @@
       display: grid;
       place-items: center;
       background: var(--white);
-      color: var(--purple);
+      color: var(--burgundy);
       font-family: "Yeseva One", serif;
       font-size: 24px;
       text-decoration: none;
       box-shadow: none;
-      background-image: linear-gradient(135deg, var(--ink) 0%, var(--purple) 78%, var(--orange) 100%);
+      background-image: linear-gradient(135deg, var(--ink) 0%, var(--burgundy) 78%, var(--orange) 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -144,7 +145,7 @@
       padding: 13px 21px;
       border: 1px solid white;
       border-radius: 999px;
-      color: var(--purple);
+      color: var(--burgundy);
       background: white;
       font-weight: 600;
       font-family: "Yeseva One", Georgia, serif;
@@ -170,8 +171,8 @@
       pointer-events: none;
       background: linear-gradient(
         145deg,
-        rgba(78, 42, 132, .15),
-        rgba(78, 42, 132, .20)
+        rgba(109, 33, 60, .15),
+        rgba(109, 33, 60, .20)
       );
       mix-blend-mode: multiply;
     }
@@ -189,14 +190,14 @@
       display: grid;
       place-items: center;
       padding: 30px;
-      color: var(--purple);
+      color: var(--burgundy);
       text-align: center;
       transform: rotate(8deg);
     }
 
     section:not(.hero):not(.who-i-am) { padding: 100px 0; }
     .section-inner { width: min(1080px, 86%); margin: auto; }
-    h2 { margin: 0 0 20px; color: var(--purple); font-size: clamp(38px, 5vw, 68px); }
+    h2 { margin: 0 0 20px; color: var(--burgundy); font-size: clamp(38px, 5vw, 68px); }
     .section-lead { max-width: 720px; font-size: 19px; line-height: 1.7; }
 
     .acting { background: var(--white); }
@@ -217,7 +218,7 @@
       aspect-ratio: 3 / 4;
       border-radius: 14px;
       background: var(--ink);
-      box-shadow: 0 10px 26px rgba(14,11,22,.14);
+      box-shadow: 0 10px 26px rgba(68,0,13,.14);
     }
     .production-photo-grid .production-image-crop img {
       height: 100%;
@@ -245,7 +246,7 @@
       object-position: center;
       border-radius: 14px;
       background: var(--ink);
-      box-shadow: 0 10px 26px rgba(14,11,22,.14);
+      box-shadow: 0 10px 26px rgba(68,0,13,.14);
     }
     .production-gallery figcaption {
       margin-top: 12px;
@@ -254,9 +255,9 @@
       line-height: 1.45;
       text-align: center;
     }
-    .production-gallery figcaption strong { color: var(--purple); font-size: 14px; }
+    .production-gallery figcaption strong { color: var(--burgundy); font-size: 14px; }
 
-    .singing { color: white; background: var(--purple); }
+    .singing { color: white; background: var(--burgundy); }
     .singing h2 { color: white; }
     .singing .section-lead { color: white; }
     .singing-media {
@@ -272,7 +273,7 @@
       border-radius: 26px;
       color: white;
       background: var(--ink);
-      box-shadow: 0 18px 44px rgba(14,11,22,.28);
+      box-shadow: 0 18px 44px rgba(68,0,13,.28);
     }
     .singing-video-card video {
       display: block;
@@ -300,8 +301,13 @@
       border-radius: 26px;
       object-fit: cover;
       object-position: center;
-      box-shadow: 0 18px 44px rgba(14,11,22,.24);
+      box-shadow: 0 18px 44px rgba(68,0,13,.24);
     }
+
+    .hobby-gallery.singing-gallery { color: white; background: var(--wine); box-shadow: 0 14px 38px rgba(68,0,13,.22); }
+    .singing-gallery h3 { color: white; }
+    .singing-lead { max-width: 720px; margin: -6px 0 0; font-size: 17px; line-height: 1.6; }
+    .singing-gallery .singing-media { margin-top: 26px; }
 
     .headshots { background: var(--white); }
     .headshot-grid {
@@ -311,7 +317,7 @@
       max-width: 820px;
       margin: 42px auto 0;
     }
-    .headshot-card { margin: 0; overflow: hidden; border-radius: 28px; background: transparent; box-shadow: 0 14px 38px rgba(78,42,132,.14); }
+    .headshot-card { margin: 0; overflow: hidden; border-radius: 28px; background: transparent; box-shadow: 0 14px 38px rgba(109,33,60,.14); }
     .headshot-card img { display: block; width: 100%; height: auto; object-fit: contain; transition: transform .35s ease; }
     .headshot-card:hover img { transform: scale(1.025); }
 
@@ -321,9 +327,9 @@
       padding: 28px;
       border-radius: 26px;
       background: var(--white);
-      box-shadow: 0 14px 38px rgba(78,42,132,.1);
+      box-shadow: 0 14px 38px rgba(109,33,60,.1);
     }
-    .hobby-gallery h3 { margin: 0 0 20px; color: var(--purple); font-size: 30px; }
+    .hobby-gallery h3 { margin: 0 0 20px; color: var(--burgundy); font-size: 30px; }
     .hobby-photo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -334,7 +340,7 @@
       overflow: hidden;
       border-radius: 16px;
       background: #f8f6fb;
-      box-shadow: 0 8px 20px rgba(14,11,22,.12);
+      box-shadow: 0 8px 20px rgba(68,0,13,.12);
     }
     .media-card img,
     .media-card video {
@@ -351,7 +357,7 @@
       line-height: 1.4;
       text-align: center;
     }
-    .media-card figcaption strong { color: var(--purple); }
+    .media-card figcaption strong { color: var(--burgundy); }
     .baking-grid { display: block; }
     .baking-row {
       display: grid;
@@ -403,7 +409,7 @@
       overflow: hidden;
       border-radius: 26px;
       background: var(--white);
-      box-shadow: 0 14px 38px rgba(78,42,132,.1);
+      box-shadow: 0 14px 38px rgba(109,33,60,.1);
     }
     .place-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
     .place-card figcaption {
@@ -414,10 +420,10 @@
       text-align: center;
     }
     .place-card strong {
-      color: var(--purple);
+      color: var(--burgundy);
       font-weight: 600;
     }
-    .who-i-am { margin-top: -1px; padding: 28px 0 88px; color: white; background: var(--purple); }
+    .who-i-am { margin-top: -1px; padding: 28px 0 88px; color: white; background: var(--burgundy); }
     .who-i-am .statement-copy p { color: white; }
     .statement-copy { max-width: 900px; }
     .statement-copy p { font-size: 18px; line-height: 1.8; }
@@ -425,7 +431,7 @@
     .statement-meme h3 { margin: 0 0 11px; color: var(--yellow); font-size: clamp(22px, 2.2vw, 29px); }
     .hear-name { display: inline-flex; align-items: center; gap: 9px; margin: 17px 0 4px; padding: 9px 15px 9px 10px; border: 1px solid rgba(255,255,255,.65); border-radius: 999px; color: white; background: transparent; font: 600 15px "DM Sans", sans-serif; text-decoration: none; cursor: pointer; }
     .hear-name:hover { background: rgba(255,255,255,.12); }
-    .hear-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; color: var(--purple); background: var(--white); font-size: 17px; }
+    .hear-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; color: var(--burgundy); background: var(--white); font-size: 17px; }
     .video-wrap { position: relative; overflow: hidden; aspect-ratio: 16 / 9; border-radius: 18px; background: var(--ink); }
     .video-wrap video {
       position: absolute;
@@ -436,7 +442,7 @@
       background: var(--ink);
       object-fit: contain;
     }
-    .resume { color: white; background: var(--purple); text-align: center; }
+    .resume { color: white; background: var(--burgundy); text-align: center; }
     .resume h2 { color: white; }
     .resume-card {
       max-width: 620px;
@@ -445,10 +451,10 @@
       border: 1px solid rgba(255,255,255,.28);
       border-radius: 28px;
       background: rgba(255,255,255,.08);
-      box-shadow: 0 18px 48px rgba(14,11,22,.2);
+      box-shadow: 0 18px 48px rgba(68,0,13,.2);
     }
     .resume-card p { margin: 0 auto 26px; font-size: 18px; line-height: 1.7; }
-    .resume-card .button { color: var(--purple); background: white; }
+    .resume-card .button { color: var(--burgundy); background: white; }
 
     .contact { color: white; background: var(--orange); text-align: center; }
     .contact h2 { color: white; }
@@ -517,7 +523,6 @@
       <div class="nav-links">
         <a href="#home" data-page-link="home">Home</a>
         <a href="#acting" data-page-link="acting">Acting</a>
-        <a href="#singing" data-page-link="singing">Singing</a>
         <a href="#headshots" data-page-link="headshots">Headshots</a>
         <a href="#resume" data-page-link="resume">Resume</a>
         <a href="#offstage" data-page-link="offstage">Offstage</a>
@@ -536,7 +541,7 @@
         <p class="intro">Olá! I’m a Brazilian performer based in Chicago, bringing curiosity and humor to stage and screen.</p>
       </div>
       <div class="portrait-frame">
-        <img src="headshot-black.jpg" alt="Headshot of Katarina Andrade" width="1463" height="2048" fetchpriority="high">
+        <img src="homepage-portrait.jpg" alt="Headshot of Katarina Andrade" width="1024" height="1536" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -544,10 +549,10 @@
   <section class="who-i-am active-page" id="who-i-am" data-page="home">
     <div class="section-inner statement-copy">
       <div class="statement-meme">
-        <h3>Wait a minute… who are you?</h3>
+        <h3>Acting Reel</h3>
         <div class="video-wrap">
-          <video class="kazoo-video" controls autoplay playsinline preload="auto" aria-label="Wait a minute, who are you? meme clip">
-            <source src="kazoo-kid.mp4" type="video/mp4">
+          <video class="reel-video" controls playsinline preload="metadata" aria-label="Katarina Andrade acting reel">
+            <source src="acting-reel.mp4" type="video/mp4">
             Your browser does not support embedded video.
           </video>
         </div>
@@ -597,34 +602,6 @@
     </div>
   </section>
 
-  <section class="singing" id="singing" data-page="singing">
-    <div class="section-inner">
-      <p class="eyebrow">Mezzo-soprano</p>
-      <h2>Singing</h2>
-      <p class="section-lead">Northwestern’s Significant Others (SigO), all-female a cappella group.</p>
-      <div class="singing-media">
-        <figure class="singing-video-card">
-          <video controls playsinline preload="metadata">
-            <source src="sigo-performance.mp4" type="video/mp4">
-            Your browser does not support embedded video.
-          </video>
-          <figcaption>Significant Others · Performance Reel</figcaption>
-        </figure>
-        <figure class="singing-video-card">
-          <video controls playsinline preload="metadata">
-            <source src="sigo-second-performance.mp4" type="video/mp4">
-            Your browser does not support embedded video.
-          </video>
-          <figcaption>Significant Others · Holiday Performance</figcaption>
-        </figure>
-        <div class="singing-photo-grid" aria-label="Photos with Northwestern Significant Others a cappella">
-          <img src="sigo-outdoors.webp" alt="Katarina Andrade with Northwestern Significant Others outdoors" loading="lazy">
-          <img src="sigo-stage.webp" alt="Katarina Andrade with Northwestern Significant Others after a performance" loading="lazy">
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="headshots" id="headshots" data-page="headshots">
     <div class="section-inner">
       <p class="eyebrow">Gallery</p>
@@ -641,6 +618,31 @@
       <p class="eyebrow">Beyond acting</p>
       <h2>Offstage</h2>
       <div class="offstage-gallery">
+        <article class="hobby-gallery singing-gallery">
+          <h3>Singing · Significant Others A Cappella</h3>
+          <p class="singing-lead">Mezzo-soprano with Northwestern’s Significant Others (SigO), an all-female a cappella group.</p>
+          <div class="singing-media">
+            <figure class="singing-video-card">
+              <video controls playsinline preload="metadata">
+                <source src="sigo-second-performance.mp4" type="video/mp4">
+                Your browser does not support embedded video.
+              </video>
+              <figcaption>Significant Others · Holiday Performance</figcaption>
+            </figure>
+            <figure class="singing-video-card">
+              <video controls playsinline preload="metadata">
+                <source src="sigo-performance.mp4" type="video/mp4">
+                Your browser does not support embedded video.
+              </video>
+              <figcaption>Significant Others · Performance Reel</figcaption>
+            </figure>
+            <div class="singing-photo-grid" aria-label="Photos with Northwestern Significant Others a cappella">
+              <img src="sigo-outdoors.webp" alt="Katarina Andrade with Northwestern Significant Others outdoors" loading="lazy">
+              <img src="sigo-stage.webp" alt="Katarina Andrade with Northwestern Significant Others after a performance" loading="lazy">
+            </div>
+          </div>
+        </article>
+
         <article class="hobby-gallery">
           <h3>Dearborn Observatory</h3>
           <div class="dearborn-media-grid" aria-label="Dearborn Observatory photo and video gallery">
@@ -681,13 +683,6 @@
             <figure class="media-card"><img src="dance-5.webp" alt="Katarina Andrade in a dance pose under purple stage light" loading="lazy"><figcaption><strong>Jazz Nutcracker</strong></figcaption></figure>
             <figure class="media-card"><img src="dance-6.webp" alt="Katarina Andrade performing a choreographed floor sequence" loading="lazy"><figcaption><strong>Jazz Nutcracker</strong></figcaption></figure>
             <div class="movement-video-row">
-              <figure class="media-card movement-video-card dale-duro-video-card">
-                <video controls playsinline preload="metadata" aria-label="Brazilian samba and funk choreography by Katarina Andrade for Dale Duro Latin Dance Company">
-                  <source src="movement-dale-duro-2026.mp4" type="video/mp4">
-                  Your browser does not support embedded video.
-                </video>
-                <figcaption><strong>Brazilian samba + funk</strong> · Choreographed for Dale Duro Latin Dance Co. (2026)</figcaption>
-              </figure>
               <figure class="media-card movement-video-card swimming-video-card">
                 <video controls playsinline preload="metadata" aria-label="Katarina Andrade swimming">
                   <source src="swimming-5-seconds.mp4" type="video/mp4">
@@ -766,7 +761,6 @@
     const pageTitles = {
       home: 'Katarina Andrade | Actor, Singer & Storyteller',
       acting: 'Acting | Katarina Andrade',
-      singing: 'Singing | Katarina Andrade',
       headshots: 'Headshots | Katarina Andrade',
       resume: 'Resume | Katarina Andrade',
       offstage: 'Offstage | Katarina Andrade',
@@ -774,6 +768,7 @@
     };
 
     function openPage(requestedPage, updateHistory = false) {
+      if (requestedPage === 'singing') requestedPage = 'offstage';
       const page = validPages.has(requestedPage) ? requestedPage : 'home';
       pageSections.forEach(section => {
         const isActive = section.dataset.page === page;
